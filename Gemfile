@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.9'
 
+gem 'slim'
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
@@ -19,11 +21,17 @@ gem 'jquery-rails', '2.0.2'
 
 group :development, :test do
   gem 'sqlite3', '1.3.5'
+  gem "rspec", "~> 2.12.0"
   gem 'rspec-rails', "~> 2.0"
+  gem 'guard-rspec', '1.2.1'
+  gem 'guard-spork', '1.2.0'
+  gem 'spork', '0.9.2'
 end
 
 group :test do
   gem 'capybara', '1.1.2'
+  gem 'rb-fsevent'
+  gem 'terminal-notifier-guard'
 end
 
 group :production do
