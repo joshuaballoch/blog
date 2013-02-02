@@ -31,7 +31,9 @@ header {
         li {
           font-size:16px;
           font-weight:200;
-          letter-spacing:2px;
+          letter-spacing:1px;
+          display:inline-block;
+          margin-right:10px;
           a, a:visited {
             color:#fff;
             text-transform:uppercase;
