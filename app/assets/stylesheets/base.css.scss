@@ -1,0 +1,48 @@
+@import 'bootstrap/mixins';
+@import 'blog_var';
+body {
+  background-image:url('textures/gray_jean.png');
+  .container {
+    margin:auto;
+  }
+  padding:0;
+  font-family:"Helvetica Neue", Helvetica, Arial;
+}
+
+header {
+  background-image:url('textures/debut_dark.png');
+  height:45px;
+  border-top:5px solid $green;
+  color:#fff;
+  overflow:hidden;
+  .shadow-container {
+    width:100%;
+    height:5px;
+    @include box-shadow(0 0px 10px #fff);
+  }
+  .container {
+    margin:auto;
+    padding:20px 0 5px 0;
+    nav {
+      ul {
+        list-style:none;
+        padding-left:2px;
+        margin:0;
+        li {
+          font-size:16px;
+          font-weight:200;
+          letter-spacing:2px;
+          a, a:visited {
+            color:#fff;
+            text-transform:uppercase;
+            &:hover {
+              text-decoration:none;
+              color:$green;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
