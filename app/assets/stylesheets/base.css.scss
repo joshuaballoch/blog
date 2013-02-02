@@ -31,7 +31,8 @@ header {
   .container {
     margin:auto;
     padding:20px 0 5px 0;
-    nav {
+    position:relative;
+    nav, .menu {
       ul {
         list-style:none;
         padding-left:2px;
@@ -52,6 +53,11 @@ header {
           }
         }
       }
+    }
+    .menu {
+      position:absolute;
+      right:0;
+      bottom:5px;
     }
   }
 }
