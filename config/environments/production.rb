@@ -48,8 +48,13 @@ Blog::Application.configure do
   # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
   # config.assets.precompile += %w( search.js )
 
+  # On config/application.rb forcing your application to not access the DB
+  # or load models when precompiling your assets (FOR DEVISE)
+  config.assets.initialize_on_precompile = false
+
   # Disable delivery errors, bad email addresses will be ignored
   # config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.default_url_options = { :host => 'warm-reef-1151.heroku.com' }
 
   # Enable threaded mode
   # config.threadsafe!
