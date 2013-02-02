@@ -9,6 +9,8 @@ header
       .menu
         ul
           li
-            - if 1==1 #user_signed_in?
+            - if user_signed_in?
               = link_to "Log Out", '/logout', :method => :delete
+            - else
+              = link_to "Sign In", '/login'
   .shadow-container

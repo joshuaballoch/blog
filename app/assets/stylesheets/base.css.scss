@@ -58,6 +58,13 @@ header {
       position:absolute;
       right:0;
       bottom:5px;
+      min-width:60px;
+      ul li a, ul li a:visited {
+        display:none;
+      }
+      &:hover ul li a {
+        display:block;
+      }
     }
   }
 }
