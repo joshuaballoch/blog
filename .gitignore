@@ -14,4 +14,7 @@
 /log/*.log
 /tmp
 
+/vendor/cache
+/vendor/cache/*
+
 .DS_Store
