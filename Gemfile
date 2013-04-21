@@ -6,6 +6,7 @@ gem 'slim'
 gem 'bootstrap-sass'
 
 gem 'devise'
+gem 'inherited_resources'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
@@ -19,7 +20,9 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails', '2.0.2'
+group :development do
+  gem 'jquery-rails'
+end
 
 group :development, :test do
   gem 'sqlite3', '1.3.5'
@@ -41,6 +44,7 @@ end
 
 group :production do
   gem 'pg', '0.12.2'
+  gem 'cloudfoundry-jquery-rails'
 end
 
 # To use ActiveModel has_secure_password
