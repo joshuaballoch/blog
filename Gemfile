@@ -5,6 +5,7 @@ gem 'rails', '3.2.11'
 gem 'slim'
 gem 'bootstrap-sass'
 
+gem 'cancan'
 gem 'devise'
 gem 'inherited_resources'
 gem 'jquery-rails'
