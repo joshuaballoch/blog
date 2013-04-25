@@ -40,6 +40,7 @@ group :test do
   gem 'randexp'
   gem 'rb-fsevent'
   gem 'terminal-notifier-guard'
+  gem 'simplecov', :require => false
 end
 
 group :production do
