@@ -10,7 +10,7 @@ class User < ActiveRecord::Base
 
   #FIXME add validations
 
-  before_validation :invited?
+  before_validation :invited?, :on => :create
 
   private
 

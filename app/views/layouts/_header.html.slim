@@ -5,6 +5,10 @@ header
         ul
           li
             = link_to "Home", root_path
+          - if can? :new, Post
+            li
+              = link_to "New Post", new_post_path
+
 
       .menu
         ul
