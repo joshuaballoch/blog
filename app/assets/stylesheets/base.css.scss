@@ -1,12 +1,28 @@
 @import 'bootstrap/mixins';
 @import 'blog_var';
+html, body {
+  height:100%;
+}
 body {
   background-image:url('textures/gray_jean.png');
   .container {
     margin:auto;
+    min-height:100%;
+    margin: 0 auto -50px;
   }
   padding:0;
   font-family:"Helvetica Neue", Helvetica, Arial;
+}
+
+a {
+  color:$grey;
+  &:hover {
+    color:$blue;
+    text-decoration:none;
+  }
+  &:visited {
+    color:$blue;
+  }
 }
 
 .flash-message {
@@ -29,9 +45,9 @@ body {
 }
 
 header {
-  background-image:url('textures/debut_dark.png');
+  background-image:url('textures/escheresque_ste.png');
   height:45px;
-  border-top:4px solid $green;
+  border-top:4px solid $blue;
   color:#fff;
   overflow:hidden;
   .shadow-container {
@@ -43,23 +59,23 @@ header {
     margin:auto;
     padding:20px 0 5px 0;
     position:relative;
-    nav, .menu {
+    nav {
       ul {
         list-style:none;
         padding-left:2px;
         margin:0;
         li {
-          font-size:16px;
-          font-weight:200;
+          font-size:14px;
+          font-weight:300;
           letter-spacing:1px;
           display:inline-block;
           margin-right:10px;
           a, a:visited {
-            color:#fff;
+            color:$grey-dark;
             text-transform:uppercase;
             &:hover {
               text-decoration:none;
-              color:$green;
+              color:#fff;
             }
           }
         }
@@ -75,6 +91,35 @@ header {
       }
       &:hover ul li a {
         display:block;
+      }
+    }
+  }
+}
+
+footer {
+  background:$grey-dark2;
+  height:50px;
+  margin-top:50px;
+  .menu {
+    margin-top:15px;
+    ul {
+      list-style:none;
+      padding-left:2px;
+      margin:0;
+      li {
+        font-size:12px;
+        font-weight:100;
+        letter-spacing:1px;
+        display:inline-block;
+        margin-right:10px;
+        a, a:visited {
+          color:#fff;
+          text-transform:lowercase;
+          &:hover {
+            text-decoration:none;
+            color:$blue;
+          }
+        }
       }
     }
   }

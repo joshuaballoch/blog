@@ -8,13 +8,4 @@ header
           - if can? :new, Post
             li
               = link_to "New Post", new_post_path
-
-
-      .menu
-        ul
-          li
-            - if user_signed_in?
-              = link_to "Log Out", '/logout', :method => :delete
-            - else
-              = link_to "Sign In", '/login'
   .shadow-container
