@@ -1,6 +1,10 @@
-- if notice
-  .flash-message.notice
-    = notice
-- if alert
-  .flash-message.alert
-    = alert
+#flash-alert.flash-bar-wrap
+  .flash-bar
+    - if notice
+      .alert.alert-success
+        .close.dismiss data-dismiss="alert" &times;
+        = notice
+    - if alert
+      .alert.alert-error
+        .close.dismiss data-dismiss="alert" &times;
+        = alert

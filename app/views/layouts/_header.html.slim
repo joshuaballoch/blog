@@ -7,5 +7,7 @@ header
             = link_to "Home", root_path
           - if can? :new, Post
             li
-              = link_to "New Post", new_post_path
+              = link_to "New", new_post_path
+    .title
+      = link_to "Name of Blog", root_path
   .shadow-container
